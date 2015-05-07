@@ -2,6 +2,94 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    link(href='/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/css/bootstrap-responsive.min.css', rel='stylesheet')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600', rel='stylesheet')
+    link(href='/css/font-awesome.css', rel='stylesheet')
+    link(href='/css/style.css', rel='stylesheet')
+    link(href='/css/pages/dashboard.css', rel='stylesheet')
   body
-    block content
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='index.html') Bootstrap Admin Template 
+          .nav-collapse
+            ul.nav.pull-right
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  i.icon-cog
+                  |  Account 
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='javascript:;') Settings
+                  li
+                    a(href='javascript:;') Help
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  i.icon-user
+                  |  EGrappler.com 
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='javascript:;') Profile
+                  li
+                    a(href='javascript:;') Logout
+            form.navbar-search.pull-right
+              input.search-query(type='text', placeholder='Search')
+          // /.nav-collapse
+        // /container
+      // /navbar-inner
+    // /navbar
+    .subnavbar
+      .subnavbar-inner
+        .container
+          ul.mainnav
+            li.active
+              a(href='/')
+                i.icon-dashboard
+                span Dashboard
+            li
+              a(href='/reports')
+                i.icon-list-alt
+                span Reports
+            li
+              a(href='guidely.html')
+                i.icon-facetime-video
+                span App Tour
+            li
+              a(href='charts.html')
+                i.icon-bar-chart
+                span Charts
+            li
+              a(href='shortcodes.html')
+                i.icon-code
+                span Shortcodes
+            li.dropdown
+              a.dropdown-toggle(href='javascript:;', data-toggle='dropdown')
+                i.icon-long-arrow-down
+                span Drops
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='icons.html') Icons
+                li
+                  a(href='faq.html') FAQ
+                li
+                  a(href='pricing.html') Pricing Plans
+                li
+                  a(href='login.html') Login
+                li
+                  a(href='signup.html') Signup
+                li
+                  a(href='error.html') 404
+        // /container
+      // /subnavbar-inner
+      block content
