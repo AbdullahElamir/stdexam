@@ -1,0 +1,25 @@
+$(document).ready(function(){
+
+     var defaults = {
+        disabled: true,
+      };
+  $.extend($.fn.editable.defaults, defaults);
+  $('#enable').click(function() {
+    $('#user .editable').editable('toggleDisabled');
+  }); 
+
+    $('#name').editable({
+    url: '/order/editOrder',
+    type: 'select',
+    source:'/order/getEmployee',
+    pk: 1,
+    name: 'name',
+    title: 'Enter Employe',
+    validate: function(v) {
+      if(!v) return 'الرجاء ادخال اسم المورد';
+    }
+  });
+
+
+
+});

@@ -1,2 +1,0 @@
-# stdexam
-# stdexam
