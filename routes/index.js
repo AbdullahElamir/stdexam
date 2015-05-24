@@ -7,5 +7,10 @@ router.get('/', function(req, res) {
 });
 
 
+router.get('/addstudent', function(req, res) {
+  res.render('addstudent', { title: 'دخول' });
+});
+
+
 
 module.exports = router;
