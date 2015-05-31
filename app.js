@@ -6,6 +6,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var routes = require('./routes/index');
+var routes = require('./routes/student');
 var passport = require('passport');
 var app = express();
 
@@ -24,6 +25,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/', routes);
+app.use('/student', routes);
+app.use('/faculty', routes);
+app.use('/employee', routes);
+app.use('/department', routes);
 
 
 

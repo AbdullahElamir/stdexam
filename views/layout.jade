@@ -19,7 +19,7 @@ html(lang='en')
         // START X-NAVIGATION
         ul.x-navigation
           li.xn-logo
-            a(href='index.html') ATLANT
+            a(href='/') ATLANT
             a.x-navigation-control(href='#')
           li.xn-profile
             a.profile-mini(href='#')
@@ -31,15 +31,15 @@ html(lang='en')
                 .profile-data-name John Doe
                 .profile-data-title Web Developer/Designer
               .profile-controls
-                a.profile-control-left(href='pages-profile.html')
+                a.profile-control-left(href='#')
                   span.fa.fa-info
-                a.profile-control-right(href='pages-messages.html')
+                a.profile-control-right(href='#')
                   span.fa.fa-envelope
           li.xn-title Navigation
-          li
-            a(href='index.html')
+          li(class="#{flag}")
+            a(href='/')
               span.fa.fa-desktop
-              span.xn-text Dashboard
+              span.xn-text لوحة التحكــم
           li.xn-openable
             a(href='#')
               span.fa.fa-files-o
@@ -53,8 +53,7 @@ html(lang='en')
                 a(href='#')
                   span.fa.fa-users
                   |  تعــديل طالب
-            
-          li.xn-openable.active
+          li.xn-openable
             a(href='#')
               span.fa.fa-file-text-o
               span.xn-text Layouts
