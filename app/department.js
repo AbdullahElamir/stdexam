@@ -1,7 +1,7 @@
 var mysqlMgr = require('./mysql').mysqlMgr,
 exports.deptMgr = {
 
-  adddepartment : function(body,cb){
+  addDepartment : function(body,cb){
     mysqlMgr.connect(function (conn) {
       conn.query('INSERT INTO `department` SET ?',body,  function(err, result) {
         conn.release();
