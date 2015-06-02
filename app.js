@@ -7,6 +7,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var routes = require('./routes/student');
+var routes = require('./routes/faculty');
 var passport = require('passport');
 var app = express();
 
