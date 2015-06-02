@@ -1,0 +1,56 @@
+extends layout
+block content
+  .container
+    .row
+      .panel.panel-primary.filterable
+        .panel-heading
+          h3.panel-title Users
+          .pull-right
+            button.btn.btn-default.btn-xs.btn-filter
+              span.glyphicon.glyphicon-filter
+              |  Filter
+        table.table
+          thead
+            tr.filters
+              th
+                input.form-control(type='text', placeholder='#', disabled='')
+              th
+                input.form-control(type='text', placeholder='First Name', disabled='')
+              th
+                input.form-control(type='text', placeholder='Last Name', disabled='')
+              th
+                input.form-control(type='text', placeholder='Username', disabled='')
+          tbody
+            tr
+              td 1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              td 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              td 3
+              td Larry
+              td the Bird
+              td @twitter
+  // START SCRIPTS
+  // START PLUGINS
+  script(type='text/javascript', src='/js/plugins/jquery/jquery.min.js')
+  script(type='text/javascript', src='/js/plugins/jquery/jquery-ui.min.js')
+  script(type='text/javascript', src='/js/plugins/bootstrap/bootstrap.min.js')
+  // END PLUGINS
+  // THIS PAGE PLUGINS
+  script(type='text/javascript', src='/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js')
+  // END PAGE PLUGINS
+  // START TEMPLATE
+  script(type='text/javascript', src='/js/plugins.js')
+  script(type='text/javascript', src='/js/actions.js')
+  // END TEMPLATE
+  // START CUSTOM SCRIPTS
+  script(type='text/javascript', src='/js/veiwStudentTable.js')
+  // END CUSTOM SCRIPTS
+  // END SCRIPTS
+  
