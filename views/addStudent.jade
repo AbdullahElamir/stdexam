@@ -3,136 +3,121 @@ block content
   .row
     .col-md-10
       form.form-horizontal
-        .panel.panel-default
-          .panel-heading.ui-draggable-handle
-            h3.panel-title
-              strong Two Column
-              |  Layout
-            ul.panel-controls
-              li
-                a.panel-remove(href='#')
-                  span.fa.fa-times
-          .panel-body
-            p
-              | This is non libero bibendum, scelerisque arcu id, placerat nunc. Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris. Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem. Phasellus semper felis in odio convallis, et venenatis nisl posuere. Morbi non aliquet magna, a consectetur risus. Vivamus quis tellus eros. Nulla sagittis nisi sit amet orci consectetur laoreet. Vivamus volutpat erat ac vulputate laoreet. Phasellus eu ipsum massa.
+        .panel.panel-default 
           .panel-body
             .row
               .col-md-6
                 .form-group
-                  label.col-md-3.control-label Text Field
                   .col-md-9
                     .input-group
                       span.input-group-addon
                         span.fa.fa-pencil
-                      input.form-control(style='background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg=="); background-repeat: no-repeat; background-attachment: scroll; background-position: right center; cursor: auto;', type='text')
+                      input.form-control(type='text')
                     span.help-block This is sample of text field
-                .form-group
-                  label.col-md-3.control-label Password
+                  label.control-label أسم الطالب
+                .form-group                  
                   .col-md-9.col-xs-12
                     .input-group
                       span.input-group-addon
-                        span.fa.fa-unlock-alt
-                      input.form-control(style='background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII="); background-repeat: no-repeat; background-attachment: scroll; background-position: right center; cursor: auto;', type='password')
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
                     span.help-block Password field sample
-                .form-group
-                  label.col-md-3.control-label Textarea
+                  label.control-label أسم الام 
+                .form-group                  
                   .col-md-9.col-xs-12
-                    textarea.form-control(rows='5')
-                    span.help-block Default textarea field
-                .form-group
-                  label.col-md-3.control-label File
-                  .col-md-9
-                    a.file-input-wrapper.btn.btn-default.fileinput.btn-primary
-                      span Browse file
-                      input#filename.fileinput.btn-primary(name='filename', title='Browse file', type='file')
-                    span.help-block Input type file
-              .col-md-6
-                .form-group
-                  label.col-md-3.control-label Datepicker
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='number')
+                    span.help-block Password field sample
+                  label.control-label رقم الهاتف  
+                .form-group                 
                   .col-md-9
                     .input-group
                       span.input-group-addon
                         span.fa.fa-calendar
-                      input.form-control.datepicker(value='2014-11-01', type='text')
-                    span.help-block Click on input field to get datepicker
+                      input.form-control.datepicker(type='date', value='2014-11-01')
+                    span.help-block Click on input field to get datepicke  
+                  label.control-label تاريخ الميﻻد  
                 .form-group
-                  label.col-md-3.control-label Tags
-                  .col-md-9
-                    input#tags1432454267882.tagsinput(style='display: none;', value='First,Second,Third', type='text')
-                    #tags1432454267882_tagsinput.tagsinput(style='width: 100%; height: auto;')
-                      span.tag
-                        span First  
-                        a(title='Removing tag', href='#')
-                      span.tag
-                        span Second  
-                        a(title='Removing tag', href='#')
-                      span.tag
-                        span Third  
-                        a(title='Removing tag', href='#')
-                      #tags1432454267882_addTag
-                        input#tags1432454267882_tag(style='color: rgb(102, 102, 102); width: 78px;', value='', data-default='add a tag')
-                      .tags_clear
-                    span.help-block Default textarea field
+                  .col-md-9.col-xs-12
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block Password field sample
+                  label.control-label مكان الميﻻد
                 .form-group
-                  label.col-md-3.control-label Select
+                  
                   .col-md-9
-                    select.form-control.select(style='display: none;')
+                    input#filename.fileinput.btn-primary(type='file', name='filename', title='Browse file')
+                    span.help-block Input type file
+                  label.control-label File  
+              .col-md-6
+                  
+                .form-group
+                  .col-md-9
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block This is sample of text field
+                  label.control-label رقم ورقة العائلة
+                .form-group                  
+                  .col-md-9.col-xs-12
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block Password field sample
+                  label.control-label رقم قيد العائلة
+                .form-group                  
+                  .col-md-9.col-xs-12
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block Password field sample
+                  label.control-label عنوان الاقامة 
+                .form-group                  
+                  .col-md-9.col-xs-12
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block Password field sample
+                  label.control-label السجل المدني  
+                .form-group   
+                  .col-md-9
+                    select.form-control.select
                       option Option 1
                       option Option 2
                       option Option 3
                       option Option 4
                       option Option 5
-                    .btn-group.bootstrap-select.form-control.select
-                      button.btn.dropdown-toggle.selectpicker.btn-default(title='Option 1', type='button', data-toggle='dropdown')
-                        span.filter-option.pull-left Option 1
-                        span.caret
-                      .dropdown-menu.open
-                        ul.dropdown-menu.inner.selectpicker(role='menu')
-                          li.selected(rel='0')
-                            a(tabindex='0', style='')
-                              span.text Option 1
-                              i.glyphicon.glyphicon-ok.icon-ok.check-mark
-                          li(rel='1')
-                            a(tabindex='0', style='')
-                              span.text Option 2
-                              i.glyphicon.glyphicon-ok.icon-ok.check-mark
-                          li(rel='2')
-                            a(tabindex='0', style='')
-                              span.text Option 3
-                              i.glyphicon.glyphicon-ok.icon-ok.check-mark
-                          li(rel='3')
-                            a(tabindex='0', style='')
-                              span.text Option 4
-                              i.glyphicon.glyphicon-ok.icon-ok.check-mark
-                          li(rel='4')
-                            a(tabindex='0', style='')
-                              span.text Option 5
-                              i.glyphicon.glyphicon-ok.icon-ok.check-mark
                     span.help-block Select box example
+                  label.control-label الجنسية  
                 .form-group
-                  label.col-md-3.control-label Checkbox
+                  
                   .col-md-9
                     label.check
-                      .icheckbox_minimal-grey.checked(style='position: relative;')
-                        input.icheckbox(style='position: absolute; opacity: 0;', checked='checked', type='checkbox')
-                        ins.iCheck-helper(style='position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 0px none; opacity: 0;')
-                      |  Checkbox title
+                      input.icheckbox(type='radio', checked='checked')
+                      |  ذكر
+                    label.check
+                      input.icheckbox(type='radio')
+                      |  أنثى  
                     span.help-block Checkbox sample, easy to use
+                  label.control-label الجنس 
           .panel-footer
             button.btn.btn-default Clear Form
-            button.btn.btn-primary.pull-right Submit
+            button.btn.btn-primary.pull-right Submit 
+
 
   // START SCRIPTS
   // START PLUGINS
   script(type='text/javascript', src='/js/plugins/jquery/jquery.min.js')
   script(type='text/javascript', src='/js/plugins/jquery/jquery-ui.min.js')
   script(type='text/javascript', src='/js/plugins/bootstrap/bootstrap.min.js')
-  // END PLUGINS
-  // THIS PAGE PLUGINS
-  script(type='text/javascript', src='/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js')
-  // END PAGE PLUGINS
-  // START TEMPLATE
-  script(type='text/javascript', src='/js/plugins.js')
-  script(type='text/javascript', src='/js/actions.js')
-  // END TEMPLATE
-  // END SCRIPTS
+  script(type='text/javascript', src='js/settings.js')
+  script(type='text/javascript', src='js/plugins.js')
+  script(type='text/javascript', src='js/actions.js')  
