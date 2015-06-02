@@ -5,7 +5,7 @@ block content
       form.form-horizontal
         .panel.panel-default 
           .panel-body
-            .row
+            .row   
               .col-md-6
                 .form-group
                   .col-md-9
@@ -13,55 +13,7 @@ block content
                       span.input-group-addon
                         span.fa.fa-pencil
                       input.form-control(type='text')
-                    span.help-block This is sample of text field
-                  label.control-label أسم الطالب
-                .form-group                  
-                  .col-md-9.col-xs-12
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-pencil
-                      input.form-control(type='text')
-                    span.help-block Password field sample
-                  label.control-label أسم الام 
-                .form-group                  
-                  .col-md-9.col-xs-12
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-pencil
-                      input.form-control(type='number')
-                    span.help-block Password field sample
-                  label.control-label رقم الهاتف  
-                .form-group                 
-                  .col-md-9
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-calendar
-                      input.form-control.datepicker(type='date', value='2014-11-01')
-                    span.help-block Click on input field to get datepicke  
-                  label.control-label تاريخ الميﻻد  
-                .form-group
-                  .col-md-9.col-xs-12
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-pencil
-                      input.form-control(type='text')
-                    span.help-block Password field sample
-                  label.control-label مكان الميﻻد
-                .form-group
-                  
-                  .col-md-9
-                    input#filename.fileinput.btn-primary(type='file', name='filename', title='Browse file')
-                    span.help-block Input type file
-                  label.control-label File  
-              .col-md-6
-                  
-                .form-group
-                  .col-md-9
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-pencil
-                      input.form-control(type='text')
-                    span.help-block This is sample of text field
+                    span.help-block 
                   label.control-label رقم ورقة العائلة
                 .form-group                  
                   .col-md-9.col-xs-12
@@ -69,7 +21,7 @@ block content
                       span.input-group-addon
                         span.fa.fa-pencil
                       input.form-control(type='text')
-                    span.help-block Password field sample
+                    span.help-block 
                   label.control-label رقم قيد العائلة
                 .form-group                  
                   .col-md-9.col-xs-12
@@ -77,7 +29,7 @@ block content
                       span.input-group-addon
                         span.fa.fa-pencil
                       input.form-control(type='text')
-                    span.help-block Password field sample
+                    span.help-block 
                   label.control-label عنوان الاقامة 
                 .form-group                  
                   .col-md-9.col-xs-12
@@ -85,7 +37,7 @@ block content
                       span.input-group-addon
                         span.fa.fa-pencil
                       input.form-control(type='text')
-                    span.help-block Password field sample
+                    span.help-block 
                   label.control-label السجل المدني  
                 .form-group   
                   .col-md-9
@@ -95,22 +47,158 @@ block content
                       option Option 3
                       option Option 4
                       option Option 5
-                    span.help-block Select box example
+                    span.help-block 
                   label.control-label الجنسية  
-                .form-group
-                  
+                .form-group                  
                   .col-md-9
                     label.check
-                      input.icheckbox(type='radio', checked='checked')
+                      input(name = "sex" ,type='radio', checked='checked')
                       |  ذكر
                     label.check
-                      input.icheckbox(type='radio')
+                      input(name "sex" ,type='radio')
                       |  أنثى  
-                    span.help-block Checkbox sample, easy to use
+                    span.help-block 
                   label.control-label الجنس 
+              .col-md-6
+                .form-group
+                  .col-md-9
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block 
+                  label.control-label أسم الطالب
+                .form-group                  
+                  .col-md-9.col-xs-12
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block 
+                  label.control-label أسم الام 
+                .form-group                  
+                  .col-md-9.col-xs-12
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block 
+                  label.control-label رقم الهاتف  
+                .form-group                 
+                  .col-md-9
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-calendar
+                      input.form-control.datepicker(type='date', value='2014-11-01')
+                    span.help-block  
+                  label.control-label تاريخ الميﻻد  
+                .form-group
+                  .col-md-9.col-xs-12
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block 
+                  label.control-label مكان الميﻻد
+                .form-group
+                  .col-md-9.col-xs-12
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block 
+                  label.control-label مكان عمل الوالد 
+            .row  
+              p
+              p.std.col-md-7.pull-right بيانات الشهادة السابقة
+              p
+                .col-md-6
+                  .form-group
+                    .col-md-9.col-xs-12
+                      .input-group
+                        span.input-group-addon
+                          span.fa.fa-pencil
+                        input.form-control(type='text')
+                      span.help-block 
+                    label.control-label رقم الجلوس
+                  .form-group
+                    .col-md-9.col-xs-12
+                      .input-group
+                        span.input-group-addon
+                          span.fa.fa-pencil
+                        input.form-control(type='text')
+                      span.help-block 
+                    label.control-label معدل الطالب
+                  .form-group
+                    .col-md-9.col-xs-12
+                      .input-group
+                        span.input-group-addon
+                          span.fa.fa-pencil
+                        input.form-control(type='text')
+                      span.help-block 
+                    label.control-label رقم الوطني
+  
+                .col-md-6
+                  .form-group
+                    .col-md-9.col-xs-12
+                      .input-group
+                        span.input-group-addon
+                          span.fa.fa-pencil
+                        input.form-control(type='text')
+                      span.help-block 
+                    label.control-label أخر شهادة
+                  .form-group
+                    .col-md-9.col-xs-12
+                      .input-group
+                        span.input-group-addon
+                          span.fa.fa-pencil
+                        input.form-control(type='text')
+                      span.help-block 
+                    label.control-label تخصص أخر شهادة
+                  .form-group
+                    .col-md-9.col-xs-12
+                      .input-group
+                        span.input-group-addon
+                          span.fa.fa-pencil
+                        input.form-control(type='text')
+                      span.help-block 
+                    label.control-label تاريخ الحصول عليها
+                  .form-group
+                    .col-md-9.col-xs-12
+                      .input-group
+                        span.input-group-addon
+                          span.fa.fa-pencil
+                        input.form-control(type='text')
+                      span.help-block 
+                    label.control-label مكان الحصور عليها      
+            .row  
+              p
+              p.std.col-md-7.pull-right بيانات التحاق الطالب
+              p
+                .col-md-6
+                  .form-group
+                    .col-md-9.col-xs-12
+                      .input-group
+                        span.input-group-addon
+                          span.fa.fa-pencil
+                        input.form-control(type='text')
+                      span.help-block 
+                    label.control-label حالة الطالب 
+                .col-md-6
+                  .form-group
+                    .col-md-9.col-xs-12
+                      .input-group
+                        span.input-group-addon
+                          span.fa.fa-pencil
+                        input.form-control(type='text')
+                      span.help-block 
+                    label.control-label الوضع المالي للطالب           
+
           .panel-footer
-            button.btn.btn-default Clear Form
             button.btn.btn-primary.pull-right Submit 
+            button.btn.btn-default Clear Form
+            
+
 
 
   // START SCRIPTS
