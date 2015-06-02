@@ -1,0 +1,110 @@
+extends layout
+block content
+  .row
+    .col-md-10
+      form.form-horizontal
+        .panel.panel-default 
+          .panel-body
+            .row   
+              .col-md-6
+                .form-group
+                  .col-md-9
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block 
+                  label.control-label رقم الوطني
+                .form-group                  
+                  .col-md-9.col-xs-12
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block 
+                  label.control-label رقم الهاتف
+                .form-group                  
+                  .col-md-9.col-xs-12
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block 
+                  label.control-label عنوان الاقامة  
+                .form-group   
+                  .col-md-9
+                    select.form-control.select
+                      option Option 1
+                      option Option 2
+                      option Option 3
+                      option Option 4
+                      option Option 5
+                    span.help-block 
+                  label.control-label الجنسية  
+                .form-group                  
+                  .col-md-9
+                    label.check
+                      input(name = "sex" ,type='radio', checked='checked')
+                      |  ذكر
+                    label.check
+                      input(name "sex" ,type='radio')
+                      |  أنثى  
+                    span.help-block 
+                  label.control-label الجنس 
+              .col-md-6
+                .form-group
+                  .col-md-9
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block 
+                  label.control-label ألاسم
+                .form-group                  
+                  .col-md-9.col-xs-12
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block 
+                  label.control-label المؤهل العلمي
+                .form-group                  
+                  .col-md-9.col-xs-12
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block 
+                  label.control-label التخصص  
+                .form-group                 
+                  .col-md-9
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-calendar
+                      input.form-control.datepicker(type='date', value='2014-11-01')
+                    span.help-block  
+                  label.control-label تاريخ الميﻻد  
+                .form-group
+                  .col-md-9.col-xs-12
+                    .input-group
+                      span.input-group-addon
+                        span.fa.fa-pencil
+                      input.form-control(type='text')
+                    span.help-block 
+                  label.control-label مكان الميﻻد
+
+          .panel-footer
+            button.btn.btn-primary.pull-right Submit 
+            button.btn.btn-default Clear Form
+            
+
+
+
+  // START SCRIPTS
+  // START PLUGINS
+  script(type='text/javascript', src='/js/plugins/jquery/jquery.min.js')
+  script(type='text/javascript', src='/js/plugins/jquery/jquery-ui.min.js')
+  script(type='text/javascript', src='/js/plugins/bootstrap/bootstrap.min.js')
+  script(type='text/javascript', src='js/settings.js')
+  script(type='text/javascript', src='js/plugins.js')
+  script(type='text/javascript', src='js/actions.js')  
