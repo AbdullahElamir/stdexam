@@ -5,9 +5,11 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var routes = require('./routes/index');
-var routes = require('./routes/student');
-var routes = require('./routes/faculty');
+var index = require('./routes/index');
+var student = require('./routes/student');
+var faculty = require('./routes/faculty');
+var employee = require('./routes/employee');
+var department = require('./routes/department');
 var passport = require('passport');
 var app = express();
 
@@ -25,11 +27,11 @@ app.use(session({secret: 'MctDev',resave: true,saveUninitialized: true}));
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use('/', routes);
-app.use('/student', routes);
-app.use('/faculty', routes);
-app.use('/employee', routes);
-app.use('/department', routes);
+app.use('/', index);
+app.use('/student', student);
+app.use('/faculty', faculty);
+app.use('/employee', employee);
+app.use('/department', department);
 
 
 

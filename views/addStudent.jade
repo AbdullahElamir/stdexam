@@ -1,212 +1,67 @@
 extends layout
 block content
-  .row
-    .col-md-10
-      form.form-horizontal
-        .panel.panel-default 
-          .panel-body
-            .row   
-              .col-md-6
-                .form-group
-                  .col-md-9
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-pencil
-                      input.form-control(type='text')
-                    span.help-block 
-                  label.control-label رقم ورقة العائلة
-                .form-group                  
-                  .col-md-9.col-xs-12
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-pencil
-                      input.form-control(type='text')
-                    span.help-block 
-                  label.control-label رقم قيد العائلة
-                .form-group                  
-                  .col-md-9.col-xs-12
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-pencil
-                      input.form-control(type='text')
-                    span.help-block 
-                  label.control-label عنوان الاقامة 
-                .form-group                  
-                  .col-md-9.col-xs-12
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-pencil
-                      input.form-control(type='text')
-                    span.help-block 
-                  label.control-label السجل المدني  
-                .form-group   
-                  .col-md-9
-                    select.form-control.select
-                      option Option 1
-                      option Option 2
-                      option Option 3
-                      option Option 4
-                      option Option 5
-                    span.help-block 
-                  label.control-label الجنسية  
-                .form-group                  
-                  .col-md-9
-                    label.check
-                      input(name = "sex" ,type='radio', checked='checked')
-                      |  ذكر
-                    label.check
-                      input(name "sex" ,type='radio')
-                      |  أنثى  
-                    span.help-block 
-                  label.control-label الجنس 
-              .col-md-6
-                .form-group
-                  .col-md-9
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-pencil
-                      input.form-control(type='text')
-                    span.help-block 
-                  label.control-label أسم الطالب
-                .form-group                  
-                  .col-md-9.col-xs-12
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-pencil
-                      input.form-control(type='text')
-                    span.help-block 
-                  label.control-label أسم الام 
-                .form-group                  
-                  .col-md-9.col-xs-12
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-pencil
-                      input.form-control(type='text')
-                    span.help-block 
-                  label.control-label رقم الهاتف  
-                .form-group                 
-                  .col-md-9
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-calendar
-                      input.form-control.datepicker(type='date', value='2014-11-01')
-                    span.help-block  
-                  label.control-label تاريخ الميﻻد  
-                .form-group
-                  .col-md-9.col-xs-12
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-pencil
-                      input.form-control(type='text')
-                    span.help-block 
-                  label.control-label مكان الميﻻد
-                .form-group
-                  .col-md-9.col-xs-12
-                    .input-group
-                      span.input-group-addon
-                        span.fa.fa-pencil
-                      input.form-control(type='text')
-                    span.help-block 
-                  label.control-label مكان عمل الوالد 
-            .row  
-              p
-              p.std.col-md-7.pull-right بيانات الشهادة السابقة
-              p
-                .col-md-6
-                  .form-group
-                    .col-md-9.col-xs-12
-                      .input-group
-                        span.input-group-addon
-                          span.fa.fa-pencil
-                        input.form-control(type='text')
-                      span.help-block 
-                    label.control-label رقم الجلوس
-                  .form-group
-                    .col-md-9.col-xs-12
-                      .input-group
-                        span.input-group-addon
-                          span.fa.fa-pencil
-                        input.form-control(type='text')
-                      span.help-block 
-                    label.control-label معدل الطالب
-                  .form-group
-                    .col-md-9.col-xs-12
-                      .input-group
-                        span.input-group-addon
-                          span.fa.fa-pencil
-                        input.form-control(type='text')
-                      span.help-block 
-                    label.control-label رقم الوطني
-  
-                .col-md-6
-                  .form-group
-                    .col-md-9.col-xs-12
-                      .input-group
-                        span.input-group-addon
-                          span.fa.fa-pencil
-                        input.form-control(type='text')
-                      span.help-block 
-                    label.control-label أخر شهادة
-                  .form-group
-                    .col-md-9.col-xs-12
-                      .input-group
-                        span.input-group-addon
-                          span.fa.fa-pencil
-                        input.form-control(type='text')
-                      span.help-block 
-                    label.control-label تخصص أخر شهادة
-                  .form-group
-                    .col-md-9.col-xs-12
-                      .input-group
-                        span.input-group-addon
-                          span.fa.fa-pencil
-                        input.form-control(type='text')
-                      span.help-block 
-                    label.control-label تاريخ الحصول عليها
-                  .form-group
-                    .col-md-9.col-xs-12
-                      .input-group
-                        span.input-group-addon
-                          span.fa.fa-pencil
-                        input.form-control(type='text')
-                      span.help-block 
-                    label.control-label مكان الحصور عليها      
-            .hr
-            .row  
-              p
-              p.std.col-md-7.pull-right بيانات التحاق الطالب
-              p
-                .col-md-6
-                  .form-group
-                    .col-md-9.col-xs-12
-                      .input-group
-                        span.input-group-addon
-                          span.fa.fa-pencil
-                        input.form-control(type='text')
-                      span.help-block 
-                    label.control-label حالة الطالب 
-                .col-md-6
-                  .form-group
-                    .col-md-9.col-xs-12
-                      .input-group
-                        span.input-group-addon
-                          span.fa.fa-pencil
-                        input.form-control(type='text')
-                      span.help-block 
-                    label.control-label الوضع المالي للطالب           
-
-          .panel-footer
-            button.btn.btn-primary.pull-right Submit 
-            button.btn.btn-default Clear Form
-            
-
-
-
-  // START SCRIPTS
-  // START PLUGINS
-  script(type='text/javascript', src='/js/plugins/jquery/jquery.min.js')
-  script(type='text/javascript', src='/js/plugins/jquery/jquery-ui.min.js')
-  script(type='text/javascript', src='/js/plugins/bootstrap/bootstrap.min.js')
-  script(type='text/javascript', src='/js/settings.js')
-  script(type='text/javascript', src='/js/plugins.js')
-  script(type='text/javascript', src='/js/actions.js')  
+  .page-inner
+    .page-title#page-title
+      h3 لوحة التحكم
+      .page-breadcrumb
+        ol.breadcrumb
+          li
+            a(href="/") الرئيسية
+          li.active لوحة التحكم
+    #main-wrapper
+      .row
+    // Main Wrapper
+    .page-footer
+      p.no-s .كافة الحقوق محفوظه 2015 &#169; ادارة المعاهد العليا قسم التوثيق والمعلومات
+  // Page Inner
+  // Page Content
+  nav#cd-nav.cd-nav-container
+    header
+      h3 Navigation
+      a.cd-close-nav(href="#0") Close
+    ul.cd-nav.list-unstyled
+      li.cd-selected(data-menu="index")
+        a(href="javsacript:void(0);")
+          span
+            i.glyphicon.glyphicon-home
+          p Dashboard
+      li(data-menu="profile")
+        a(href="javsacript:void(0);")
+          span
+            i.glyphicon.glyphicon-user
+          p Profile
+      li(data-menu="inbox")
+        a(href="javsacript:void(0);")
+          span
+            i.glyphicon.glyphicon-envelope
+          p Mailbox
+      li(data-menu="#")
+        a(href="javsacript:void(0);")
+          span
+            i.glyphicon.glyphicon-tasks
+          p Tasks
+      li(data-menu="#")
+        a(href="javsacript:void(0);")
+          span
+            i.glyphicon.glyphicon-cog
+          p Settings
+      li(data-menu="calendar")
+        a(href="javsacript:void(0);")
+          span
+            i.glyphicon.glyphicon-calendar
+          p Calendar
+  .cd-overlay
+  // Javascripts
+  script(src="/plugins/jquery/jquery-2.1.3.min.js")
+  script(src="/plugins/jquery-ui/jquery-ui.min.js")
+  script(src="/plugins/pace-master/pace.min.js")
+  script(src="/plugins/jquery-blockui/jquery.blockui.js")
+  script(src="/plugins/bootstrap/js/bootstrap.min.js")
+  script(src="/plugins/jquery-slimscroll/jquery.slimscroll.min.js")
+  script(src="/plugins/switchery/switchery.min.js")
+  script(src="/plugins/uniform/jquery.uniform.min.js")
+  script(src="/plugins/offcanvasmenueffects/js/classie.js")
+  script(src="/plugins/offcanvasmenueffects/js/main.js")
+  script(src="/plugins/waves/waves.min.js")
+  script(src="/plugins/3d-bold-navigation/js/main.js")
+  script(src="/js/modern.min.js")
